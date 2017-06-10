@@ -1,0 +1,22 @@
+{
+  "name": "ericbaranowski",
+  "version": "1.0.0",
+  "description": "Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericbaranowski/resume.git"
+  },
+  "author": "Eric Baranowski",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ericbaranowski/resume/issues"
+  },
+  "homepage": "https://github.com/ericbaranowski/resume#readme",
+  "dependencies": {
+    "resume-schema": "0.0.16"
+  }
+}
