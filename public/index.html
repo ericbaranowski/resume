@@ -1,296 +1,1022 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eric Baranowski</title>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans' rel='stylesheet' type='text/css'>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<style>
-		body {
-			font-size: 62.5%;
-			font-family: Montserrat;
-			color: #333333;
-		}
-		.picture {
-			border-radius: 50%;
-			margin: 0 auto;
-		}
-		a {
-			color: #333333;
-			text-decoration: none;
-		}
-		a:visited {
-			color: #4e4e4e;
-		}
-		a:hover {
-			color: #4e4e4e;
-			text-decoration: underline;
-		}
-		
-		.header {
-			text-align:center;
-			font-size: 2em;
-			margin-top:1em;
-			margin-left:5%;
-			margin-right:5%;
-		}
-		h1 {
-			font-size:3em;
-			margin-bottom:0;
-		}
-		.profile {
-			font-family: Montserrat;
-			font-size: 1em;
-			margin:0;
-		}
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Eric Baranowski</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /><style>@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?9yug7q');
+  src:  url('fonts/icomoon.eot?9yug7q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9yug7q') format('truetype'),
+    url('fonts/icomoon.woff?9yug7q') format('woff'),
+    url('fonts/icomoon.svg?9yug7q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-		.contact-header {
-			font-weight:bold;
-		}
-		.label {
-			margin-top: 0;
-			margin-bottom: 1em;
-		}
-		.fa {
-			font-size:2em;
-		}
-		.left {
-			font-size: 1em;
-		}
-		.main {
-			margin 0 auto;
-			margin-left: 10%;
-			margin-right: 10%;
-			margin-bottom: 50px;
-		}
-		h2 {
-			font-size: 3.5em;
-		}
-		h3 {
-			font-size:2em;
-			margin-bottom:0;
-		}
-		h4 {
-			color: #4e4e4e;
-			font-size:1.5em;
-			margin-top:0;
-		}
-		.skills {
-			margin-bottom: 10px;
-		}
-		p {
-			font-family: 'Open Sans';
-			font-size: 1.5em;
-		}
-		li {
-			font-family: 'Open Sans';
-			font-size: 1.5em;
-		}
-		.keywords {
-			background-color: #333333;
-			color:#fff;
-			padding: 6px;
-			font-size: 1.2em;
-			margin-bottom: 5px;
-			display:inline-block;
-		}
-		blockquote {
-			margin: 2em 10px;
-  			padding: 1em 10px;
-			border-left: 10px solid #edf0f5;
-			font-family: 'Open Sans';
-			font-size: 1.5em;
-		}
-		blockquote .name {
-			font-weight:bold;
-			font-family: "Montserrat";
-		}
-		.responsive-show {
-			display:none;
-		}
-		@media (max-width: 1000px) {
-  			.header {
-    			font-size: 1.66em;
-  			}
-  			h2 {
-  				font-size: 3em;
-  			}
-		}
-		@media (max-width: 500px) {
-			p {
-				font-size:1.2em;
-			}
-			li {
-				font-size:1.2em;
-			}
-			blockquote {
-				font-size:1.2em;
-			}
-			h2 {
-				font-size:2.3em;
-			}
-			.responsive-hidden {
-				display:none;
-				visibility: hidden;
-			}
-			.responsive-show {
-				display:inline;
-				visibility: visible;
-			}
-		}
-    </style>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-</head>
-<body>
-<div class="header">
-<h1>ERIC BARANOWSKI</h1>
-<h3 class="label">ENTERPRISE ARCHITECT</h3>
-<div class="contact-header">
-Salt Lake City, Utah, US<br>
-5067 Ellerby Ct.
-</div>
-<div id="contact">
-<br>
-<div class="contact-header">
-EMAIL <span class="responsive-hidden">&bull;</span> <span class="responsive-show"><br></span><a href="/cdn-cgi/l/email-protection#badfc8d3d9fad1cfd6dbded594d9d5d7" target="_blank"><span class="__cf_email__" data-cfemail="94f1e6fdf7d4ffe1f8f5f0fbbaf7fbf9">[email&#160;protected]</span></a> <span class="responsive-show"><br><br></span>
-</div>
-<div class="contact-header">
-PHONE <span class="responsive-hidden">&bull;</span> <span class="responsive-show"><br></span>(424) 258-5236 <span class="responsive-show"><br><br></span>
-</div>
-<div class="contact-header">
-WEBSITE <span class="responsive-hidden">&bull;</span> <span class="responsive-show"><br></span><a href="http:&#x2F;&#x2F;erics.life" target="_blank">http:&#x2F;&#x2F;erics.life</a> <span class="responsive-show"><br><br></span>
-</div>
-</div>
-<br>
-<div id="profiles">
-<div class="contact-header">PROFILES</div><br>
-<p class="profile"><a href="https:&#x2F;&#x2F;twitter.com&#x2F;KuladoInc" target="_blank" class="profile">Twitter</a></p>
-<p class="profile"><a href="https:&#x2F;&#x2F;github.com&#x2F;ericbaranowski" target="_blank" class="profile">Github</a></p>
-<p class="profile"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;ericbaranowski" target="_blank" class="profile">LinkedIn</a></p>
-</div>
-</div>
-<div class="main">
-<div id="about">
-<h2><i class="fa fa-user left"></i> ABOUT</h2>
-<p>
-Proven executive and enterprise architect with extensive experience in a broad range of industries. Self-taught software developer and DevOps advocate, my primary focus is on transforming and enhancing IT in order to better align with business strategy and achieve business objectives.&lt;br&gt;&lt;br&gt;Specialties: Technology strategy and transformation, enterprise architecture, cloud infrastructure, application design and development, product vision, management. Skilled in a broad variety of development tools, platforms and methodologies.&lt;br&gt;&lt;br&gt;I combine my passion for [attempting to] automate everything I touch with my 10 years of operations experience and research in helping businesses reduce risk and downtime. I am also a very creative and competent troubleshooter with a lot of practical experience, my love and support for open source initiatives can prove it.
-</p>
-</div>
-<div id="work">
-<h2><i class="fa fa-suitcase left"></i> WORK EXPERIENCE</h2>
-<div class="job">
-<h3>Lead Architect&#x2F;Engineer, VirtuaaS by Kulado Inc. - Austin, TX.</h3>
-<h4>June 2016 - October 2017</h4>
-<p>VirtuaaS is a cloud-platform technology based on a proprietary universal automation algorithm that is designed to assist in automating Enterprise Architecture and ITIL.</p>
-<h4>HIGHLIGHTS</h4>
-<ul>
-<li>Created a high availability HIPPA Compliant cloud infrastructure to deliver remote Workspaces as a Service.</li>
-<li>Partnered with Microsoft, Intuit, Cisco, Citrix, TechData, and several others to provide an agnostic approach to rapid changing business demands.</li>
-</ul>
-</div>
-<div class="job">
-<h3>CEO&#x2F;President, Kulado Inc. - Salt Lake City, UT.</h3>
-<h4>January 2014 - October 2017</h4>
-<p>Kulado Inc. is an enterprise architecture consulting firm specializing in BPA and ITIL.</p>
-<h4>HIGHLIGHTS</h4>
-<ul>
-<li>Built a fully automated IVR for a security firm using the Twilio API. Eliminated the need for over five full-time call center employees, saving the company over $20,000 its first month. Volume was roughly 200 calls&#x2F;day.</li>
-<li>Created an automated hosting platform with WHM&#x2F;cPanel and WHMCS. Provisioning was fully automated on Microsoft Azure. Utilized various API’s to integrate account management and provisioning. Ceated an algorithm that continuously pulled the lowest cost from various 3rd party providers and passed the savings down to the consumer.</li>
-<li>Developed and integrated several custom Salesforce implementations for Financial Service Consultants.</li>
-</ul>
-</div>
-<div class="job">
-<h3>Enterprise&#x2F;ITIL Consultant, Vida Capital Inc.&#x2F;Magna Life Settlements – Austin, TX.</h3>
-<h4>February 2016 - June 2016</h4>
-<p>Vida Capital is an institutional asset manager focused exclusively on providing longevity-contingent investment solutions to institutions and individual investors.</p>
-<h4>HIGHLIGHTS</h4>
-<ul>
-<li>Unified communications across both organizations with Slack, Office365, and their local telecom provider.</li>
-<li>Designed, converted, and launched an SEC compliant hybrid cloud solution on Azure.</li>
-<li>Created ITIL and compliance strategy from scratch, providing high-level security and control over digital assets and formalizing the employee lifecycle.</li>
-</ul>
-</div>
-<div class="job">
-<h3>ITIL Consultant, Riverview Research, LLC – Cleveland, OH.</h3>
-<h4>August 2011 - January 2014</h4>
-<p>Riverview provides comprehensive financial guidance to affluent families and institutional clients.</p>
-<h4>HIGHLIGHTS</h4>
-<ul>
-<li>Designed and integrated Salesforce into their practice, which previously consisted of Excel spreadsheets.</li>
-<li>Organized and automated their client onboarding process for clients with a net worth over $50M.</li>
-<li>Organized and automated the collection, processing, and reporting of quarterly performance reports distributed to clients.</li>
-</ul>
-</div>
-<div class="job">
-<h3>Founder, Custom Decal LLC – St. Louis, MO.&#x2F;Grand Junction, CO.&#x2F;Provo, UT.</h3>
-<h4>June 2008 - July 2012</h4>
-<p></p>
-<h4>HIGHLIGHTS</h4>
-<ul>
-<li>Researched and developed a detailed data analysis algorithm to forecast ideal expansion locations.</li>
-<li>Built a proprietary POS system to manage and track employees and performance on a live server, which included integrated security cams, payroll management, and theft audits.</li>
-<li>Developed eCommerce site with WordPress and built an application in Flash and PHP for customers to design and order their graphics from the website. Linked WooCommerce with proprietary POS system to automate Internet orders.</li>
-</ul>
-</div>
-</div>
-<div id="volunteer">
-<h2><i class="fa fa-child left"></i> VOLUNTEER WORK</h2>
-<h3>Developer, Project Read</h3>
-<h4>March 2014 - March 2015</h4>
-<p>Project Read provides one-on-one tutoring services to adults with low literacy skills and changes lives through literacy by empowering individuals, strengthening families, and building community.<br><a href="http:&#x2F;&#x2F;projectreadutah.org" target="_blank">http:&#x2F;&#x2F;projectreadutah.org</a></p>
-<h4>HIGHLIGHTS</h4>
-<ul>
-<li>Converted an outdated, static HTML site into a Wordpress multisite and CMS consisted of four separate sites.</li>
-<li>Although not an ICANN registrar, Kulado Inc. provides at-cost domain registration using a proprietary api algorithm.</li>
-</ul>
-</div>
-<div id="skills">
-<h2><i class="fa fa-tasks left"></i> SKILLS</h2>
-<h3 class="skills">Innovation</h3>
-<span class="keywords">Weird Perspective</span>
-<span class="keywords">Think too much</span>
-<span class="keywords">Unconventional</span>
-<h3 class="skills">Management</h3>
-<span class="keywords">Automation</span>
-<span class="keywords">Productivity</span>
-<span class="keywords">Scalability</span>
-<span class="keywords">Resourceful</span>
-</div><br>
-<div id="education">
-<h2><i class="fa fa-graduation-cap left"></i> EDUCATION</h2>
-<h3>Masters of Business Administration, Information Systems Management - Western Governors University</h3>
-<h4>August 2015 - January 2016</h4>
-<h3>Bachelor of Science, Business Management - Utah Valley University</h3>
-<h4>August 2011 - August 2014</h4>
-</div>
-<div id="interests">
-<h2><i class="fa fa-star left"></i> INTERESTS</h2>
-<h3 class="skills">Ice Hockey</h3>
-<span class="keywords">St. Louis Blues</span>
-<span class="keywords">NHL 18</span>
-<span class="keywords">Dangle, Snipe, Celly</span>
-<h3 class="skills">Speed</h3>
-<span class="keywords">Engines</span>
-<span class="keywords">Rockets</span>
-<span class="keywords">Formula One</span>
-<h3 class="skills">The Universe</h3>
-<span class="keywords">String Theory</span>
-<span class="keywords">Relating binary to biology</span>
-<span class="keywords">Losing my mind on those last two topics</span>
-</div>
-<div id="references">
-<h2><i class="fa fa-thumbs-up left"></i> REFERENCES</h2>
-<blockquote>
-Larry is a current client of Kulado Inc. I met Larry through a previous client referral and have been working with him for over three years. I have done various projects for him including a Salesforce integration and ongoing administration. Automated his Pension Fund reports, developed a secure virtual data room to share the reports while restricting the ability to share or download the reports. Larry speaks highly of me because I have provided him with excellent customer service, which includes taking his calls at 2am to wrap up projects or provide random tech support, business, or accounting advice for him. Larry continues to trust me with full, unmonitored access to everything in his business and personal life, including his business and personal credit cards and accounts, totalling in excess of half a million dollars.
-<div class="name"><br>- Larry Powell - LP Institutional, LLC. - Austin, TX</div>
-</blockquote><br>
-<blockquote>
-Steve is the founder of Riverview Research. I’ve worked with Steve remotely for several years, and worked exclusively in his office temporarily throughout parts of 2013 and 2016. My technical and programming abilities weren’t quite to where they are now, but my approach to solving business needs, learning and researching solutions, and attempting to automate everything are some of the more significant qualities Steve can confirm about me.
-<div class="name"><br>- Steve Yarmesch - Riverview Research LLC. - Cleveland, OH</div>
-</blockquote><br>
-</div>
-</div>
-<script style="display: none !important;">!function(e,t,r,n,c,a,l){function i(t,r){return r=e.createElement('div'),r.innerHTML='<a href="'+t.replace(/"/g,'&quot;')+'"></a>',r.childNodes[0].getAttribute('href')}function o(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return i(r)}try{for(c=e.getElementsByTagName('a'),l='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(a=c[n]).href.indexOf(l))>-1&&(a.href='mailto:'+o(a.href,t+l.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(a=c[n]).parentNode.replaceChild(e.createTextNode(o(a.getAttribute('data-cfemail'),0)),a)}catch(e){}}catch(e){}}(document);</script></body>
-</html>
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-trophy:before {
+  content: "\e605";
+}
+.icon-office:before {
+  content: "\e606";
+}
+.icon-clock:before {
+  content: "\e60a";
+}
+.icon-reddit:before {
+  content: "\e609";
+}
+.icon-telegram:before {
+  content: "\e904";
+}
+.icon-flickr:before {
+  content: "\f16e";
+}
+.icon-medium:before {
+  content: "\f23a";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-book:before {
+  content: "\f02d";
+}
+.icon-linkedin:before {
+  content: "\f08c";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-link:before {
+  content: "\f0c1";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-googleplus:before {
+  content: "\f0d5";
+}
+.icon-circle:before {
+  content: "\f111";
+}
+.icon-code:before {
+  content: "\f121";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-stackoverflow:before {
+  content: "\f16c";
+}
+.icon-bitbucket:before {
+  content: "\f171";
+}
+.icon-tumblr:before {
+  content: "\f173";
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-skype:before {
+  content: "\f17e";
+}
+.icon-foursquare:before {
+  content: "\f180";
+}
+.icon-gittip:before {
+  content: "\f184";
+}
+.icon-gratipay:before {
+  content: "\f184";
+}
+.icon-stackexchange:before {
+  content: "\f18d";
+}
+.icon-vimeo:before {
+  content: "\f194";
+}
+.icon-graduation-cap:before {
+  content: "\f19d";
+}
+.icon-language:before {
+  content: "\f1ab";
+}
+.icon-child:before {
+  content: "\f1ae";
+}
+.icon-behance:before {
+  content: "\f1b5";
+}
+.icon-spotify:before {
+  content: "\f1bc";
+}
+.icon-soundcloud:before {
+  content: "\f1be";
+}
+.icon-codepen:before {
+  content: "\f1cb";
+}
+.icon-hackernews:before {
+  content: "\f1d4";
+}
+.icon-lastfm:before {
+  content: "\f202";
+}
+.icon-angellist:before {
+  content: "\f209";
+}
+.icon-facebook:before {
+  content: "\f230";
+}
+.icon-meetup .path1:before {
+  content: "\e901";
+  color: rgb(255, 255, 255);
+}
+.icon-meetup .path2:before {
+  content: "\e902";
+  margin-left: -1.5em;
+  color: rgb(240, 1, 1);
+}
+.icon-meetup .path3:before {
+  content: "\e903";
+  margin-left: -1.5em;
+  color: rgb(3, 3, 3);
+}
+.icon-blogger:before {
+  content: "\e900";
+}
+.icon-exercism:before {
+  content: "\e601";
+}
+.icon-profile:before {
+  content: "\e600";
+}
+.icon-tools:before {
+  content: "\e034";
+}
+.icon-location:before {
+  content: "\e602";
+}
+.icon-mail:before {
+  content: "\e603";
+}
+.icon-phone:before {
+  content: "\e03f";
+}
+.icon-newspaper:before {
+  content: "\e607";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e60b";
+}
+.icon-thumbs-up:before {
+  content: "\e604";
+}
+.icon-chevron-down:before {
+  content: "\e60c";
+}
+.icon-chevron-up:before {
+  content: "\e60d";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e60b";
+}
+.icon-thumbs-up:before {
+  content: "\e604";
+}
+.icon-board:before {
+  content: "\e608";
+}
+
+
+.relative {
+  position: relative;
+}
+.clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.space-bottom {
+  margin-bottom: 10px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.labels {
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+  margin-right: 5px;
+}
+.label-keyword:last-child {
+  margin-right: 0;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+.clear-margin {
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
+}
+.fs-lg {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+.fs-2x {
+  font-size: 2em;
+}
+.fs-3x {
+  font-size: 3em;
+}
+.fs-4x {
+  font-size: 4em;
+}
+.btn-circle-sm {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  outline: none !important;
+}
+@font-face {
+  font-family: 'jst-elegant';
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo");
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jst-elegant' !important;
+}
+body {
+  font-family: 'Lato';
+  background: #f0f0f0;
+  color: #333;
+}
+.main {
+  padding: 5px;
+}
+.card {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px 0;
+}
+.card-nested {
+  min-height: 0;
+  border-width: 1px 0 0 0;
+}
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
+}
+.card-nested:after {
+  clear: both;
+}
+@media (max-width: 480px) {
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.background-card {
+  padding: 10px 20px;
+}
+.card-wrapper {
+  padding: 5px;
+}
+@media (max-width: 992px) {
+  .card-wrapper {
+    float: none !important;
+  }
+}
+.background-details .detail {
+  display: table;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
+  text-align: center;
+}
+.background-details .detail .info {
+  width: 100%;
+}
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .mobile-title {
+  display: none;
+}
+@media (max-width: 480px) {
+  .background-details .detail .mobile-title {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .background-details .detail {
+    display: block;
+  }
+  .background-details .detail .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .detail .title {
+    display: none;
+  }
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+@media (max-width: 992px) {
+  .info .content.has-sidebar {
+    width: 100%;
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .info .content.has-sidebar {
+    padding: 0 2px;
+  }
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+}
+.current-event {
+  font-size: 8px;
+  color: #5ACE24;
+  position: absolute;
+  right: 100%;
+  top: 4px;
+  left: -10px;
+}
+.mop-wrapper > p:last-child {
+  margin: 0;
+}
+/*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+*/
+.floating-nav-trigger {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  font-size: 1.5em;
+  color: #357ebd;
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none !important;
+}
+.floating-nav-trigger > [class^="icon-"],
+.floating-nav-trigger [class*=" icon-"],
+.floating-nav-trigger > .close-icon {
+  line-height: 50px;
+}
+.floating-nav-trigger .close-icon {
+  display: none;
+}
+.floating-nav-trigger:hover {
+  color: #1f496e;
+  background-color: #e6e6e6;
+}
+.floating-nav-trigger.is-open {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.floating-nav-trigger.is-open .close-icon {
+  display: inherit;
+}
+.floating-nav-trigger.is-open .icon-bars {
+  display: none;
+}
+.floating-nav-trigger.is-open:hover {
+  background-color: white;
+}
+.floating-nav {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+  -o-transition: transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  z-index: 50;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  visibility: hidden;
+  overflow: hidden;
+}
+.floating-nav ul {
+  font-size: 1.2em;
+  margin: 0;
+}
+.floating-nav ul li {
+  border-bottom: 1px solid #eff2f6;
+}
+.floating-nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #357ebd;
+  display: block;
+}
+.floating-nav ul li a:hover {
+  color: #1f496e;
+}
+.floating-nav ul li:last-child {
+  border-bottom: 0;
+}
+.floating-nav.is-visible {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s, visibility 0s 0s;
+  -o-transition: transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  .profile-card-wrapper {
+    position: relative;
+  }
+}
+.profile-card-wrapper .profile-card {
+  padding: 10px;
+}
+.profile-pic {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .profile-pic {
+    padding: 10px 0;
+  }
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-details {
+    text-align: center;
+  }
+}
+.contact-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.contact-details .detail .icon {
+  padding: 0 10px;
+  color: #707070;
+}
+@media (max-width: 992px) {
+  .contact-details .detail .icon {
+    padding: 0 5px 0 0;
+  }
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.contact-details .detail .icon,
+.contact-details .detail .info {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+  }
+  .contact-details .detail .icon,
+  .contact-details .detail .info {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .contact-details .detail {
+    float: left;
+    width: 25%;
+  }
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+.link-github {
+  color: #454545;
+}
+.link-github:hover,
+.link-github:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.link-twitter {
+  color: #33ccff;
+}
+.link-twitter:hover,
+.link-twitter:focus {
+  text-decoration: none;
+  color: #00bfff;
+}
+.link-blog {
+  color: #f36f24;
+}
+.link-blog:hover,
+.link-blog:focus {
+  text-decoration: none;
+  color: #d8560c;
+}
+.link-linkedin {
+  color: #007bb6;
+}
+.link-linkedin:hover,
+.link-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+.link-skype {
+  color: #12A5F4;
+}
+.link-skype:hover,
+.link-skype:focus {
+  text-decoration: none;
+  color: #0986ca;
+}
+.link-instagram {
+  color: #e4405f;
+}
+.link-instagram:hover,
+.link-instagram:focus {
+  text-decoration: none;
+  color: #d31e40;
+}
+.link-stackoverflow {
+  color: #f48024;
+}
+.link-stackoverflow:hover,
+.link-stackoverflow:focus {
+  text-decoration: none;
+  color: #c3661c;
+}
+.link-stackexchange {
+  color: #62b0df;
+}
+.link-stackexchange:hover,
+.link-stackexchange:focus {
+  text-decoration: none;
+  color: #389bd6;
+}
+.link-lastfm {
+  color: #d12127;
+}
+.link-lastfm:hover,
+.link-lastfm:focus {
+  text-decoration: none;
+  color: #a51a1f;
+}
+.link-soundcloud {
+  color: #e8822d;
+}
+.link-soundcloud:hover,
+.link-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.link-googleplus {
+  color: #dd4b39;
+}
+.link-googleplus:hover,
+.link-googleplus:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-youtube {
+  color: #dd4b39;
+}
+.link-youtube:hover,
+.link-youtube:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-pinterest {
+  color: #bd091f;
+}
+.link-pinterest:hover,
+.link-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.link-gratipay {
+  color: #630;
+}
+.link-gratipay:hover,
+.link-gratipay:focus {
+  text-decoration: none;
+  color: #331a00;
+}
+.link-vimeo {
+  color: #17b3e8;
+}
+.link-vimeo:hover,
+.link-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.link-behance {
+  color: #2c98cf;
+}
+.link-behance:hover,
+.link-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.link-codepen {
+  color: #1c1c1c;
+}
+.link-codepen:hover,
+.link-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.link-foursquare {
+  color: #fa4778;
+}
+.link-foursquare:hover,
+.link-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.link-reddit {
+  color: #545454;
+}
+.link-reddit:hover,
+.link-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.link-spotify {
+  color: #acd200;
+}
+.link-spotify:hover,
+.link-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.link-tumblr {
+  color: #2d4661;
+}
+.link-tumblr:hover,
+.link-tumblr:focus {
+  text-decoration: none;
+  color: #1d2d3e;
+}
+.link-dribbble {
+  color: #ce366f;
+}
+.link-dribbble:hover,
+.link-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.link-facebook {
+  color: #4b6daa;
+}
+.link-facebook:hover,
+.link-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.link-angellist {
+  color: black;
+}
+.link-angellist:hover,
+.link-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-bitbucket {
+  color: #205081;
+}
+.link-bitbucket:hover,
+.link-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
+}
+.link-hackernews {
+  color: #ff6600;
+}
+.link-hackernews:hover,
+.link-hackernews:focus {
+  text-decoration: none;
+  color: #cc5200;
+}
+.link-exercism {
+  color: #d81d4e;
+}
+.link-exercism:hover,
+.link-exercism:focus {
+  text-decoration: none;
+  color: #ab173e;
+}
+.link-blogger {
+  color: #FF9234;
+}
+.link-blogger:hover,
+.link-blogger:focus {
+  text-decoration: none;
+  color: #ff7701;
+}
+.link-medium {
+  color: #00AB6C;
+}
+.link-medium:hover,
+.link-medium:focus {
+  text-decoration: none;
+  color: #00784c;
+}
+.link-flickr {
+  color: black;
+}
+.link-flickr:hover,
+.link-flickr:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-telegram {
+  color: #3BABDD;
+}
+.link-telegram:hover,
+.link-telegram:focus {
+  text-decoration: none;
+  color: #2291c3;
+}
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 15px;
+}
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+.icon-meetup .path2:before {
+  margin-left: 0;
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .profile-pic img {
+    border-radius: 0;
+  }
+  .name-and-profession {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+  }
+  .floating-nav,
+  .floating-nav-trigger {
+    display: none;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+}
+</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#volunteer-work"><i class="mr-10 icon-child"></i>Volunteer Work</a></li><li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li><li><a href="#references"><i class="mr-10 icon-thumbs-up"></i>References</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Eric Baranowski" src="https://s.gravatar.com/avatar/f5e0aae7d97ca3bd67392afca69ddd3f?s=100&amp;r=pg&amp;d=mm" itemprop="image" /></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Eric Baranowski</b></h3><h5 class="text-muted" itemprop="jobTitle">Enterprise Architect</h5></div></span><hr /><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">5067 Ellerby Ct., Salt Lake City, Utah, US, UT 84117</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">(424) 258-5236</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="/cdn-cgi/l/email-protection#f792859e94b79c829b969398d994989a" itemprop="email"><span class="__cf_email__" data-cfemail="1e7b6c777d5e756b727f7a71307d7173">[email&#160;protected]</span></a></span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="http://erics.life" target="_blank">http://erics.life</a></span></div></div><hr /><div class="social-links text-center"><div><a class="fs-2x social-link link-twitter icon-twitter" href="https://twitter.com/KuladoInc" target="_blank" data-toggle="tooltip" title="Eric Baranowski on Twitter"></a><a class="fs-2x social-link link-github icon-github" href="https://github.com/ericbaranowski" target="_blank" data-toggle="tooltip" title="Eric Baranowski on Github"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/ericbaranowski" target="_blank" data-toggle="tooltip" title="Eric Baranowski on LinkedIn"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr /><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Proven executive and enterprise architect with extensive experience in a broad range of industries. Self-taught software developer and DevOps advocate, my primary focus is on transforming and enhancing IT in order to better align with business strategy and achieve business objectives. Specialties range from Technology strategy and transformation, enterprise architecture, and cloud infrastructure, to application design and development, product vision, and operations management. Skilled in a broad variety of development tools, platforms and methodologies. I combine my passion for [attempting to] automate everything I touch with my 10 years of operations experience and research in helping businesses reduce risk and downtime. I am also a very creative and competent troubleshooter with a lot of practical experience, my love and support for open source initiatives can prove it.</p>
+</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Lead Architect/Engineer</strong>,&nbsp;<a href="https://virtuaas.com" target="_blank">VirtuaaS by Kulado Inc. - Austin, TX.</a></p><p class="text-muted"><small><span class="space-right">Jun, 2016 - Oct, 2017</span><span><i class="icon-clock mr-5"></i>1 year 4 months</span></small></p><div class="mop-wrapper space-bottom"><p>VirtuaaS is a cloud-platform technology based on a proprietary universal automation algorithm that is designed to assist in automating Enterprise Architecture and ITIL.</p>
+</div><ul><li class="mop-wrapper"><p>Created a high availability HIPPA Compliant cloud infrastructure to deliver remote Workspaces as a Service.</p>
+</li><li class="mop-wrapper"><p>Partnered with Microsoft, Intuit, Cisco, Citrix, TechData, and several others to provide an agnostic approach to rapid changing business demands.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>CEO/President</strong>,&nbsp;<a href="https://kulado.com" target="_blank">Kulado Inc. - Salt Lake City, UT.</a></p><p class="text-muted"><small><span class="space-right">Jan, 2014 - Oct, 2017</span><span><i class="icon-clock mr-5"></i>3 years 9 months</span></small></p><div class="mop-wrapper space-bottom"><p>Kulado Inc. is an enterprise architecture consulting firm specializing in BPA and ITIL.</p>
+</div><ul><li class="mop-wrapper"><p>Built a fully automated IVR for a security firm using the Twilio API. Eliminated the need for over five full-time call center employees, saving the company over $20,000 its first month. Volume was roughly 200 calls/day.</p>
+</li><li class="mop-wrapper"><p>Created an automated hosting platform with WHM/cPanel and WHMCS. Provisioning was fully automated on Microsoft Azure. Utilized various API’s to integrate account management and provisioning. Ceated an algorithm that continuously pulled the lowest cost from various 3rd party providers and passed the savings down to the consumer.</p>
+</li><li class="mop-wrapper"><p>Developed and integrated several custom Salesforce implementations for Financial Service Consultants.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Enterprise/ITIL Consultant</strong>,&nbsp;<a href="http://vidacapitalinc.com/http://magnalifesettlements.com" target="_blank">Vida Capital Inc./Magna Life Settlements – Austin, TX.</a></p><p class="text-muted"><small><span class="space-right">Feb, 2016 - Jun, 2016</span><span><i class="icon-clock mr-5"></i>4 months</span></small></p><div class="mop-wrapper space-bottom"><p>Vida Capital is an institutional asset manager focused exclusively on providing longevity-contingent investment solutions to institutions and individual investors.</p>
+</div><ul><li class="mop-wrapper"><p>Unified communications across both organizations with Slack, Office365, and their local telecom provider.</p>
+</li><li class="mop-wrapper"><p>Designed, converted, and launched an SEC compliant hybrid cloud solution on Azure.</p>
+</li><li class="mop-wrapper"><p>Created ITIL and compliance strategy from scratch, providing high-level security and control over digital assets and formalizing the employee lifecycle.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>ITIL Consultant</strong>,&nbsp;<a href="http://riverviewresearch.com" target="_blank">Riverview Research, LLC – Cleveland, OH.</a></p><p class="text-muted"><small><span class="space-right">Aug, 2011 - Jan, 2014</span><span><i class="icon-clock mr-5"></i>2 years 5 months</span></small></p><div class="mop-wrapper space-bottom"><p>Riverview provides comprehensive financial guidance to affluent families and institutional clients.</p>
+</div><ul><li class="mop-wrapper"><p>Designed and integrated Salesforce into their practice, which previously consisted of Excel spreadsheets.</p>
+</li><li class="mop-wrapper"><p>Organized and automated their client onboarding process for clients with a net worth over $50M.</p>
+</li><li class="mop-wrapper"><p>Organized and automated the collection, processing, and reporting of quarterly performance reports distributed to clients.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Founder</strong>,&nbsp;<a href="http://mallstickers.com (accessible on http://web.archive.org)" target="_blank">Custom Decal LLC – St. Louis, MO./Grand Junction, CO./Provo, UT.</a></p><p class="text-muted"><small><span class="space-right">Jun, 2008 - Jul, 2012</span><span><i class="icon-clock mr-5"></i>4 years 1 month</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Researched and developed a detailed data analysis algorithm to forecast ideal expansion locations.</p>
+</li><li class="mop-wrapper"><p>Built a proprietary POS system to manage and track employees and performance on a live server, which included integrated security cams, payroll management, and theft audits.</p>
+</li><li class="mop-wrapper"><p>Developed eCommerce site with WordPress and built an application in Flash and PHP for customers to design and order their graphics from the website. Linked WooCommerce with proprietary POS system to automate Internet orders.</p>
+</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Innovation</strong><div class="space-top labels"><span class="label label-keyword">Weird Perspective</span><span class="label label-keyword">Think too much</span><span class="label label-keyword">Unconventional</span></div></div></li><li class="card card-nested card-skills"><div class="skill-info"><strong>Management</strong><div class="space-top labels"><span class="label label-keyword">Automation</span><span class="label label-keyword">Productivity</span><span class="label label-keyword">Scalability</span><span class="label label-keyword">Resourceful</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Information Systems Management, Masters of Business Administration,&nbsp;</strong>Western Governors University</p><p class="text-muted clear-margin"><small>Aug, 2015 - Jan, 2016</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Business Management, Bachelor of Science,&nbsp;</strong>Utah Valley University</p><p class="text-muted clear-margin"><small>Aug, 2011 - Aug, 2014</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="volunteer-work"><div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work</span></div><div class="info"><h4 class="title text-uppercase">Volunteer Work</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Developer, </strong><a href="http://projectreadutah.org" target="_blank">Project Read</a></p><p class="text-muted"><small>Mar, 2014 - Mar, 2015</small></p><div class="mop-wrapper"><p>Project Read provides one-on-one tutoring services to adults with low literacy skills and changes lives through literacy by empowering individuals, strengthening families, and building community.</p>
+</div><ul><li class="mop-wrapper"><p>Converted an outdated, static HTML site into a Wordpress multisite and CMS consisted of four separate sites.</p>
+</li><li class="mop-wrapper"><p>Although not an ICANN registrar, Kulado Inc. provides at-cost domain registration using a proprietary api algorithm.</p>
+</li></ul></div></li></ul></div></div></div><div class="detail" id="interests"><div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div><div class="info"><h4 class="title text-uppercase">Interests</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><p><strong>Ice Hockey</strong></p><div class="space-top labels"><span class="label label-keyword">St. Louis Blues</span><span class="label label-keyword">NHL 18</span><span class="label label-keyword">Dangle, Snipe, Celly</span></div></li><li class="card card-nested"><p><strong>Speed</strong></p><div class="space-top labels"><span class="label label-keyword">Engines</span><span class="label label-keyword">Rockets</span><span class="label label-keyword">Formula One</span></div></li><li class="card card-nested"><p><strong>The Universe</strong></p><div class="space-top labels"><span class="label label-keyword">String Theory</span><span class="label label-keyword">Relating binary to biology</span><span class="label label-keyword">Losing my mind on those last two topics</span></div></li></ul></div></div></div><div class="detail" id="references"><div class="icon"><i class="fs-lg icon-thumbs-up"></i><span class="mobile-title">References</span></div><div class="info"><h4 class="title text-uppercase">References</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested">Larry Powell - LP Institutional, LLC. - Austin, TX<blockquote class="quote"><div class="mop-wrapper"><p>Larry is a current client of Kulado Inc. I met Larry through a previous client referral and have been working with him for over three years. I have done various projects for him including a Salesforce integration and ongoing administration. Automated his Pension Fund reports, developed a secure virtual data room to share the reports while restricting the ability to share or download the reports. Larry speaks highly of me because I have provided him with excellent customer service, which includes taking his calls at 2am to wrap up projects or provide random tech support, business, or accounting advice for him. Larry continues to trust me with full, unmonitored access to everything in his business and personal life, including his business and personal credit cards and accounts, totalling in excess of half a million dollars.</p>
+</div></blockquote></li><li class="card card-nested">Steve Yarmesch - Riverview Research LLC. - Cleveland, OH<blockquote class="quote"><div class="mop-wrapper"><p>Steve is the founder of Riverview Research. I’ve worked with Steve remotely for several years, and worked exclusively in his office temporarily throughout parts of 2013 and 2016. My technical and programming abilities weren’t quite to where they are now, but my approach to solving business needs, learning and researching solutions, and attempting to automate everything are some of the more significant qualities Steve can confirm about me.</p>
+</div></blockquote></li></ul></div></div></div></div></div></section></div></div><script style="display: none !important;">!function(e,t,r,n,c,a,l){function i(t,r){return r=e.createElement('div'),r.innerHTML='<a href="'+t.replace(/"/g,'&quot;')+'"></a>',r.childNodes[0].getAttribute('href')}function o(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return i(r)}try{for(c=e.getElementsByTagName('a'),l='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(a=c[n]).href.indexOf(l))>-1&&(a.href='mailto:'+o(a.href,t+l.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(a=c[n]).parentNode.replaceChild(e.createTextNode(o(a.getAttribute('data-cfemail'),0)),a)}catch(e){}}catch(e){}}(document);</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
+  var toggleFloatingMenu = function() {
+    $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+    $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+  };
+
+  $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+  $( "[data-toggle=tooltip]" ).tooltip();
+  $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+    e.preventDefault();
+    toggleFloatingMenu();
+  });
+  $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+
+  $("#remaining-profiles").on('show.bs.collapse', function() {
+    $( '.js-profiles-collapse > i' )
+      .removeClass( 'icon-chevron-down' )
+      .addClass( 'icon-chevron-up' );
+  });
+
+  $("#remaining-profiles").on('hidden.bs.collapse', function() {
+    $( '.js-profiles-collapse > i' )
+      .removeClass( 'icon-chevron-up' )
+      .addClass( 'icon-chevron-down' );
+  });
+});
+</script><script>WebFontConfig = {
+  google: { families: [ 'Lato:300,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script></body></html>

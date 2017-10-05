@@ -19,16 +19,10 @@
   "dependencies": {
     "jsonresume-theme-classy": "^1.0.9",
     "jsonresume-theme-dark-classy-responsive": "^1.0.2",
-    "jsonresume-theme-direct": "^0.1.1",
-    "jsonresume-theme-elegant-mobile": "0.0.3",
-    "jsonresume-theme-kendall-fix": "^0.1.10",
     "jsonresume-theme-light-classy-responsive": "^1.0.5",
     "jsonresume-theme-markdown": "^1.0.2",
     "jsonresume-theme-onepage": "0.0.3",
     "jsonresume-theme-printclassy": "^1.1.1",
-    "jsonresume-theme-sceptile": "^1.0.5",
-    "jsonresume-theme-timeline": "0.0.6",
-    "jsonresume-theme-timeline-fixed": "0.0.9",
-    "jsonresume-theme-zurb": "^0.4.0"
+    "jsonresume-theme-sceptile": "^1.0.5"
   }
 }
