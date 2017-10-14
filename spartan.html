@@ -1,0 +1,936 @@
+<!doctype html>
+<html>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>Eric Baranowski</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+	<style>
+		/********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom reset */
+.main-summary p, 
+#publications .item,
+#skills .item,
+#languages .item,
+#references .item,
+#interests .item{
+	margin: 0;
+}
+
+
+/****************
+*		SMARTPHONES		
+****************/
+em {
+	color: #757575;
+}
+p {
+	margin: 1em 0;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+strong {
+	font-weight: 700;
+	font-size: 1.1em;
+}
+ul {
+	margin-top: 1em; 
+}
+div.item {
+	margin: 1em 0 2em;
+	padding-bottom: 2em;
+}
+div.item:last-of-type {
+	margin: 0;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+p {
+	text-align: justify;
+}
+
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2,
+h3 {
+	font-size: 1rem;
+}
+a {
+	color: #EB5F51;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Layout */
+body {
+	background: #f2f2f2;
+	line-height: 1.6;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#resume {
+	padding: 1rem 0;
+	margin: 1rem auto;
+}
+
+#header {
+	padding: 0 1em;
+	margin-bottom: 1em;
+}
+
+#resume > header div {
+	display: table;
+	padding-left: 0.5em;
+}
+
+#resume > header div.middle {
+	padding-top: 1.5em;
+}
+
+header img {
+	display: block;
+	width: 10em;
+	border-radius: 0.275em;
+	float: right;
+	vertical-align: middle;
+}
+
+header .name {
+	line-height: 1;
+}
+
+header .label {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #757575;
+}
+
+section:not(.section) {
+	padding: .5em 1rem;
+}
+
+section#references {
+	border-bottom:none;
+}
+
+section#basics {
+	background: inherit;
+	margin-bottom: 0;
+}
+
+section#skills {
+	padding-bottom: 0;
+}
+
+section#education, 
+section#work, 
+.main-summary section {
+	padding-bottom: 1em;
+}
+
+header::after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+h2.section-title {
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #757575;
+	padding: 1em 1rem 0;
+	margin-bottom: 0.1275em;
+}
+
+.date {
+	font-weight: 700;
+	color: #757575;
+}
+
+.position, .area, .institution {
+	font-weight: 700;
+}
+
+#interests .item, #languages .item {
+	padding: 0 1em 1em 0;
+	border-bottom: none;
+}
+
+.website::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+	content: '\f14c';
+}
+
+#profiles, #skills, #interests, #languages {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+  padding-bottom: 1em;
+}
+
+#profiles, #location {
+	box-shadow: none;
+	padding: 0;
+}
+
+#profiles .item {
+	margin: 0;
+	padding: 0;
+	padding-right: 1em;
+	border-bottom: none;
+}
+
+#interests ul {
+	margin-top: 0.5em;
+}
+
+#publications .name {
+	font-style: italic;
+}
+
+.courses li, .keywords li{
+	display: inline-block;
+	background: #f0f0f0;
+	font-size: 0.9em;
+	line-height: 1;
+	color: #333;
+	padding: 0.4em 0.8em;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+#publications .date {
+	font-weight: normal;
+	color: #000;	
+}
+
+#skills .item {
+	min-width: 15em;
+	padding: 0 .5em .8em 0;
+	border-bottom: none;
+}
+
+
+/* Skills chart */
+#skills .level .bar {
+	border: 1px solid #ddd;
+	display: block;
+	width: 10em;
+	height: 5px;
+	margin: 0em 0 1em 0;
+	position: relative;
+}
+
+#skills .level .bar::after {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	background: black;
+	height: 5px;
+}
+
+#skills .level.beginner .bar::after {
+	background: #EB5F51;
+	width: 2.5em;
+} 
+
+#skills .level.intermediate .bar::after {
+	background: #ffdf1f;
+	width: 5em;
+} 
+
+#skills .level.advanced .bar::after {
+	background: #59C596;
+	width: 7.5em;
+} 
+
+#skills .level.master .bar::after {
+	background: #5CB85C;
+	width: 10em;
+}
+
+#references .item {
+	padding-left: 1em;
+	border-left: 5px solid #EB5F51;
+}
+
+.fa.social {
+	margin-right: 0.25em;
+	font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+.google-plus {
+	color: #dd4b39;	
+}
+
+.tumblr {
+	color:#32506d;
+}
+
+.foursquare {
+	color:  #0072b1;
+}
+
+.facebook {
+	color: #3b5998;
+}
+
+.linkedin {
+	color: #007bb6;
+}
+
+.pinterest {
+	color: #cb2027;
+}
+
+.dribbble {
+	color: #ea4c89;
+}
+
+.instagram {
+	color: #517fa4;
+}
+
+.twitter {
+	color: #00aced;
+}
+
+.soundcloud { 
+	color: #ff3a00;
+}
+
+.wordpress {
+	color: #21759b;
+}
+
+.youtube {
+	color: #bb0000;
+}
+
+.github {
+	color: #171515;
+}
+
+.stack-overflow {
+	color: #828386;
+	position: relative;
+}
+
+.flickr {
+	color: #ff0084;
+}      
+
+.stack-overflow::after {
+	position: absolute;
+	left: 0;
+	content: '\f16c';
+	color: #f68a1f;
+	overflow: hidden;
+	height: 40%;
+}
+
+/******************
+*		HELPER CLASSES	
+******************/
+.fa {
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+}
+
+.clear {
+	display: table;
+	clear: both;
+}
+
+
+/****************
+*		TABLET
+****************/
+@media screen and (min-width: 602px) { 
+	
+	#resume {
+		width: 550px;
+		margin: 0 auto;
+	}
+	section > header > h3 {
+		float:left;
+	}
+	section > header > .date {
+		float: right;
+		line-height: 1.3;
+	}
+
+}
+
+
+/****************
+*		LAPTOP	
+****************/
+@media screen and (min-width: 1025px) { 
+	
+	#resume {
+		width: 650px;		
+		padding: 3em;
+		margin: 3em auto;
+		background: #fff;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	}
+
+	.section {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		border-bottom: 1px solid #eee;
+	}
+
+	.section:last-of-type {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	section > header {
+		line-height: 1;
+		padding-bottom: 1em; 
+	}
+
+	h2.section-title {
+		line-height: 1.1;
+		padding-top: 0;
+	}
+
+	section:not(.section) {
+		width: 34.5em;
+		padding: 0 1em 1em 0;
+		margin-top:0;
+		border: none;
+	}
+
+	section p {
+		margin: 0;
+	}
+
+	section#basics {
+		width: auto;
+		padding-top: 1em;
+		padding-left: 1em;
+		padding-bottom: 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+
+	#profiles .item{
+		padding-bottom: 1em;
+	}
+
+	div {
+		padding: 0;
+	}
+
+	#skills .item {
+		padding-left:0;
+		margin-top: 0;
+	}
+
+	div.item {
+		margin-top: 0;
+		border-bottom: 1px solid #eee;
+	}
+
+}
+	</style>
+	
+
+	<body>
+		<div id="resume">
+				<header id="header">
+						<div>
+							<h1 class="name">Eric Baranowski</h1>
+							<h2 class="label">Enterprise Architect</h2>
+						</div>
+
+				</header>
+				
+				<section id="basics">
+					
+						<div id="location">
+							<span class="fa fa-map-marker"></span>
+							<span class="address">
+								5067 Ellerby Ct.,
+							</span>
+							<span class="postalCode">
+								UT 84117,
+							</span>
+							<span class="city">
+								Salt Lake City
+							</span>
+							<span class="countryCode">
+								(US),
+							</span>
+							<span class="region">
+								Utah
+							</span>
+						</div>
+
+					<div id="contact">
+						<div class="website">
+							<a href="http://erics.life">http://erics.life</a>
+						</div>
+						<div class="email">
+							<span class="fa fa-envelope"></span>
+							<a href="mailto:eric@kulado.com">eric@kulado.com</a>
+						</div>
+						<div class="phone">
+							<span class="fa fa-phone-square"></span>
+							(424) 258-5236
+						</div>
+					</div>
+				
+
+					<div id="profiles">
+						<div class="item">
+							<span class="network fa fa-twitter twitter"></span>
+							<span class="username">
+								<span class="url">
+									<a href="https://twitter.com/KuladoInc">KuladoInc</a>
+								</span>
+							</span>
+						</div>
+						<div class="item">
+							<span class="network fa fa-github github"></span>
+							<span class="username">
+								<span class="url">
+									<a href="https://github.com/ericbaranowski">ericbaranowski</a>
+								</span>
+							</span>
+						</div>
+						<div class="item">
+							<span class="network fa fa-linkedin linkedin"></span>
+							<span class="username">
+								<span class="url">
+									<a href="https://www.linkedin.com/in/ericbaranowski">ericbaranowski</a>
+								</span>
+							</span>
+						</div>
+					</div>
+				</section>
+
+				<section class="section main-summary">
+					<h2 class='section-title'>About</h2>
+					<section>
+						<p>Proven executive and enterprise architect with extensive experience in a broad range of industries. Self-taught software developer and DevOps advocate, my primary focus is on transforming and enhancing IT in order to better align with business strategy and achieve business objectives. Specialties range from ITIL strategy and transformation, enterprise architecture, and cloud infrastructure, to application design and development, product vision, and operations management. Skilled in a broad variety of development tools, platforms and methodologies. I combine my passion for [attempting to] automate everything I touch with my 10 years of operations experience and research in helping businesses reduce risk and downtime. I am also a very creative and competent troubleshooter with a lot of practical experience, my love and support for open source initiatives can prove it.</p>
+					</section>
+				</section>
+
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Experience</h2>
+					<section id="work">
+						<header>
+							<h3 class="name">
+								VirtuaaS by Kulado Inc. - Austin, TX.
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									June 2016
+								</span>
+								<span class="endDate">
+									- October 2017
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Lead Architect/Engineer
+						</div>
+						<div class="website">
+							<a href="https://virtuaas.com">https://virtuaas.com</a>
+						</div>
+						<div class="summary">
+							<p>VirtuaaS is a cloud-platform technology based on a proprietary universal automation algorithm that is designed to assist in automating Enterprise Architecture and ITIL.</p>
+						</div>
+						<ul class="highlights">
+							<li>Created a high availability HIPPA Compliant cloud infrastructure to deliver remote Workspaces as a Service.</li>
+							<li>Partnered with Microsoft, Intuit, Cisco, Citrix, TechData, and several others to provide an agnostic approach to rapid changing business demands.</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Kulado Inc. - Salt Lake City, UT.
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									January 2014
+								</span>
+								<span class="endDate">
+									- October 2017
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							CEO/President
+						</div>
+						<div class="website">
+							<a href="https://kulado.com">https://kulado.com</a>
+						</div>
+						<div class="summary">
+							<p>Kulado Inc. is an enterprise architecture consulting firm specializing in BPA and ITIL.</p>
+						</div>
+						<ul class="highlights">
+							<li>Built a fully automated IVR for a security firm using the Twilio API. Eliminated the need for over five full-time call center employees, saving the company over $20,000 its first month. Volume was roughly 200 calls/day.</li>
+							<li>Created an automated hosting platform with WHM/cPanel and WHMCS. Provisioning was fully automated on Microsoft Azure. Utilized various API’s to integrate account management and provisioning. Ceated an algorithm that continuously pulled the lowest cost from various 3rd party providers and passed the savings down to the consumer.</li>
+							<li>Developed and integrated several custom Salesforce implementations for Financial Service Consultants.</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Vida Capital Inc./Magna Life Settlements – Austin, TX.
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									February 2016
+								</span>
+								<span class="endDate">
+									- June 2016
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Enterprise/ITIL Consultant
+						</div>
+						<div class="website">
+							<a href="http://vidacapitalinc.com/http://magnalifesettlements.com">http://vidacapitalinc.com/http://magnalifesettlements.com</a>
+						</div>
+						<div class="summary">
+							<p>Vida Capital is an institutional asset manager focused exclusively on providing longevity-contingent investment solutions to institutions and individual investors.</p>
+						</div>
+						<ul class="highlights">
+							<li>Unified communications across both organizations with Slack, Office365, and their local telecom provider.</li>
+							<li>Designed, converted, and launched an SEC compliant hybrid cloud solution on Azure.</li>
+							<li>Created ITIL and compliance strategy from scratch, providing high-level security and control over digital assets and formalizing the employee lifecycle.</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Riverview Research, LLC – Cleveland, OH.
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									August 2011
+								</span>
+								<span class="endDate">
+									- January 2014
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							ITIL Consultant
+						</div>
+						<div class="website">
+							<a href="http://riverviewresearch.com">http://riverviewresearch.com</a>
+						</div>
+						<div class="summary">
+							<p>Riverview provides comprehensive financial guidance to affluent families and institutional clients.</p>
+						</div>
+						<ul class="highlights">
+							<li>Designed and integrated Salesforce into their practice, which previously consisted of Excel spreadsheets.</li>
+							<li>Organized and automated their client onboarding process for clients with a net worth over $50M.</li>
+							<li>Organized and automated the collection, processing, and reporting of quarterly performance reports distributed to clients.</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Custom Decal LLC – St. Louis, MO./Grand Junction, CO./Provo, UT.
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									June 2008
+								</span>
+								<span class="endDate">
+									- July 2012
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Founder
+						</div>
+						<div class="website">
+							<a href="http://mallstickers.com (accessible on http://web.archive.org)">http://mallstickers.com (accessible on http://web.archive.org)</a>
+						</div>
+						<ul class="highlights">
+							<li>Researched and developed a detailed data analysis algorithm to forecast ideal expansion locations.</li>
+							<li>Built a proprietary POS system to manage and track employees and performance on a live server, which included integrated security cams, payroll management, and theft audits.</li>
+							<li>Developed eCommerce site with WordPress and built an application in Flash and PHP for customers to design and order their graphics from the website. Linked WooCommerce with proprietary POS system to automate Internet orders.</li>
+						</ul>
+					</div>
+					</section>
+				</section>
+		
+				<section class="section">
+					<h2 class='section-title'>Education</h2>
+					<section id="education">
+							<header>
+									<h3 class="institution">
+										Western Governors University
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2015
+									</span>
+									<span class="endDate">
+										- 2016
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										Masters of Business Administration
+									</div>
+									<div class="area">
+										Information Systems Management
+									</div>
+							</div>
+							<header>
+									<h3 class="institution">
+										Utah Valley University
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2011
+									</span>
+									<span class="endDate">
+										- 2014
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										Bachelor of Science
+									</div>
+									<div class="area">
+										Business Management
+									</div>
+							</div>
+					</section>
+				</section>
+		
+			
+				<section class="section">
+					<h2 class='section-title'>Volunteer</h2>
+					<section id="volunteer">
+								<header>
+									<h3 class="company">
+										Project Read
+									</h3>
+									<div class="date">
+										<span class="startDate">
+											March 2014
+										</span>
+										<span class="endDate">
+											- March 2015
+										</span>
+								</header>
+							<div class="item">
+							<div class="position">
+								Developer
+							</div>
+							<div class="website">
+								<a href="http://projectreadutah.org">http://projectreadutah.org</a>
+							</div>
+							<div class="summary">
+								<p>Project Read provides one-on-one tutoring services to adults with low literacy skills and changes lives through literacy by empowering individuals, strengthening families, and building community.</p>
+							</div>
+							<ul class="highlights">
+								<li>Converted an outdated, static HTML site into a Wordpress multisite and CMS consisted of four separate sites.</li>
+								<li>Although not an ICANN registrar, Kulado Inc. provides at-cost domain registration using a proprietary api algorithm.</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+		
+		
+				<section class="section">
+					<h2 class='section-title'>Skills</h2>
+					<section id="skills">
+						<div class="item">
+							<div class="name">
+								Innovation
+							</div>
+							<div class="level master">
+								<em>Master</em>
+								<div class="bar"></div>
+							</div>
+							<ul class="keywords">
+								<li>Weird Perspective</li>
+								<li>Think too much</li>
+								<li>Unconventional</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Management
+							</div>
+							<div class="level really good">
+								<em>Really Good</em>
+								<div class="bar"></div>
+							</div>
+							<ul class="keywords">
+								<li>Automation</li>
+								<li>Productivity</li>
+								<li>Scalability</li>
+								<li>Resourceful</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+
+				<section class="section">
+					<h2 class='section-title' class='section-title'>Interests</h2>
+					<section id="interests">
+						<div class="item">
+							<div class="name">
+								Ice Hockey
+							</div>
+							<ul class="keywords">
+								<li>St. Louis Blues</li>
+								<li>NHL 18</li>
+								<li>Dangle, Snipe, Celly</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Speed
+							</div>
+							<ul class="keywords">
+								<li>Engines</li>
+								<li>Rockets</li>
+								<li>Formula One</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								The Universe
+							</div>
+							<ul class="keywords">
+								<li>String Theory</li>
+								<li>Relating binary to biology</li>
+								<li>Losing my mind on those last two topics</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+		
+				<section class="section">
+					<h2 class='section-title'>References</h2>
+					<section id="references">
+						<div class="item">
+							<blockquote class="reference">
+								&#8220;&#32;Larry is a current client of Kulado Inc. I met Larry through a previous client referral and have been working with him for over three years. I have done various projects for him including a Salesforce integration and ongoing administration. Automated his Pension Fund reports, developed a secure virtual data room to share the reports while restricting the ability to share or download the reports. Larry speaks highly of me because I have provided him with excellent customer service, which includes taking his calls at 2am to wrap up projects or provide random tech support, business, or accounting advice for him. Larry continues to trust me with full, unmonitored access to everything in his business and personal life, including his business and personal credit cards and accounts, totalling in excess of half a million dollars.&#32;&#8221;
+							</blockquote>
+							<div class="name">
+								Larry Powell - LP Institutional, LLC. - Austin, TX
+							</div>
+						</div>
+						<div class="item">
+							<blockquote class="reference">
+								&#8220;&#32;Steve is the founder of Riverview Research. I’ve worked with Steve remotely for several years, and worked exclusively in his office temporarily throughout parts of 2013 and 2016. My technical and programming abilities weren’t quite to where they are now, but my approach to solving business needs, learning and researching solutions, and attempting to automate everything are some of the more significant qualities Steve can confirm about me.&#32;&#8221;
+							</blockquote>
+							<div class="name">
+								Steve Yarmesch - Riverview Research LLC. - Cleveland, OH
+							</div>
+						</div>
+					</section>
+				</section>
+		</div>		
+	</body>
+	
+</html>
