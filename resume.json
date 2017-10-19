@@ -35,8 +35,8 @@
       "company": "VirtuaaS by Kulado Inc. - Austin, TX.",
       "position": "Lead Architect/Engineer",
       "website": "https://virtuaas.com",
-      "startDate": "2016-06-15",
-      "endDate": "2017-10-31",
+      "startDate": "2016-06-01",
+      "endDate": "2017-10-01",
       "summary": "VirtuaaS is a cloud-platform technology based on a proprietary universal automation algorithm that is designed to assist in automating Enterprise Architecture and ITIL.",
       "highlights": [
         "Created a high availability HIPPA Compliant cloud infrastructure to deliver remote Workspaces as a Service.",
@@ -47,8 +47,8 @@
       "company": "Kulado Inc. - Salt Lake City, UT.",
       "position": "CEO/President",
       "website": "https://kulado.com",
-      "startDate": "2014-01-27",
-      "endDate": "2017-10-31",
+      "startDate": "2014-01-01",
+      "endDate": "2017-10-01",
       "summary": "Kulado Inc. is an enterprise architecture consulting firm specializing in BPA and ITIL.",
       "highlights": [
         "Built a fully automated IVR for a security firm using the Twilio API. Eliminated the need for over five full-time call center employees, saving the company over $20,000 its first month. Volume was roughly 200 calls/day.",
@@ -60,8 +60,8 @@
       "company": "Vida Capital Inc./Magna Life Settlements – Austin, TX.",
       "position": "Enterprise/ITIL Consultant",
       "website": "http://vidacapitalinc.com/http://magnalifesettlements.com",
-      "startDate": "2016-02-15",
-      "endDate": "2016-06-25",
+      "startDate": "2016-02-01",
+      "endDate": "2016-06-01",
       "summary": "Vida Capital is an institutional asset manager focused exclusively on providing longevity-contingent investment solutions to institutions and individual investors.",
       "highlights": [
         "Unified communications across both organizations with Slack, Office365, and their local telecom provider.",
@@ -73,8 +73,8 @@
       "company": "Riverview Research, LLC – Cleveland, OH.",
       "position": "ITIL Consultant",
       "website": "http://riverviewresearch.com",
-      "startDate": "2011-08-15",
-      "endDate": "2014-01-25",
+      "startDate": "2013-06-01",
+      "endDate": "2014-01-01",
       "summary": "Riverview provides comprehensive financial guidance to affluent families and institutional clients.",
       "highlights": [
         "Designed and integrated Salesforce into their practice, which previously consisted of Excel spreadsheets.",
@@ -87,7 +87,7 @@
       "position": "Founder",
       "website": "http://mallstickers.com (accessible on http://web.archive.org)",
       "startDate": "2008-06-01",
-      "endDate": "2012-07-01",
+      "endDate": "2013-10-01",
       "summary": "",
       "highlights": [
         "Researched and developed a detailed data analysis algorithm to forecast ideal expansion locations.",
@@ -112,15 +112,15 @@
       "institution": "Western Governors University",
       "area": "Information Systems Management",
       "studyType": "Masters of Business Administration",
-      "startDate": "2015-08-25",
-      "endDate": "2016-01-15"
+      "startDate": "2015-05-01",
+      "endDate": "2016-01-01"
     },
     {
       "institution": "Utah Valley University",
       "area": "Business Management",
       "studyType": "Bachelor of Science",
-      "startDate": "2011-08-25",
-      "endDate": "2014-08-15"
+      "startDate": "2008-08-01",
+      "endDate": "2014-08-01"
     }
   ],
   "skills": [{
