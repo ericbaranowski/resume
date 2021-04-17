@@ -1,0 +1,188 @@
+{
+  "basics": {
+    "name": "Eric Baranowski",
+    "label": "Enterprise Architect",
+    "picture": "",
+    "email": "eric@kulado.com",
+    "phone": "(424) 258-5236",
+    "degree": "BS - Business Management",
+		"website": "https://ericbaranowski.github.io",
+    "summary": "Proven executive and enterprise architect with extensive experience in a broad range of industries. Self-taught software developer and DevOps advocate, my primary focus is on transforming and enhancing IT in order to better align with business strategy and achieve business objectives.\n Specialties: Technology strategy and transformation, enterprise architecture, cloud infrastructure, application design and development, product vision, management. Skilled in a broad variety of development tools, platforms and methodologies.\n\n I combine my passion for [attempting to] automate everything I touch with my 10 years of operations experience and research in helping businesses reduce risk & downtime. I am also a very creative & competent troubleshooter with a lot of practical experience, my love and support for open source initiatives can prove it.",
+    "location": {
+      "address": "5067 Ellerby Ct.",
+      "postalCode": "UT 84117",
+      "city": "Salt Lake City",
+      "countryCode": "US",
+      "region": "Utah"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "KuladoInc",
+        "url": "https://twitter.com/KuladoInc"
+      },
+      {
+        "network": "Github",
+        "username": "ericbaranowski",
+        "url": "https://github.com/ericbaranowski"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ericbaranowski",
+        "url": "https://www.linkedin.com/in/ericbaranowski"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "VirtuaaS by Kulado Inc. - Austin, TX.",
+      "position": "Lead Architect/Engineer",
+      "website": "https://virtuaas.com",
+      "startDate": "2016-06-15",
+      "endDate": "2017-10-31",
+      "summary": "VirtuaaS is a cloud-platform technology based on a proprietary universal automation algorithm that is designed to assist in automating Enterprise Architecture and ITIL.",
+      "highlights": [
+        "Created a high availability HIPPA Compliant cloud infrastructure to deliver remote Workspaces as a Service.",
+				"Partnered with Microsoft, Intuit, Cisco, Citrix, TechData, and several others to provide an agnostic approach to rapid changing business demands."
+      ]
+    },
+    {
+      "company": "Kulado Inc. - Salt Lake City, UT.",
+      "position": "CEO/President",
+      "website": "https://kulado.com",
+      "startDate": "2014-01-27",
+      "endDate": "2017-10-31",
+      "summary": "Kulado Inc. is an enterprise architecture consulting firm specializing in BPA and ITIL.",
+      "highlights": [
+        "Built a fully automated IVR for a security firm using the Twilio API. Eliminated the need for over five full-time call center employees, saving the company over $20,000 its first month. Volume was roughly 200 calls/day.",
+				"Created an automated hosting platform with WHM/cPanel and WHMCS. Provisioning was fully automated on Microsoft Azure. Utilized various API’s to integrate account management and provisioning. Ceated an algorithm that continuously pulled the lowest cost from various 3rd party providers and passed the savings down to the consumer.",
+				"Developed and integrated several custom Salesforce implementations for Financial Service Consultants."
+      ]
+    },
+    {
+      "company": "Vida Capital Inc./Magna Life Settlements – Austin, TX.",
+      "position": "Enterprise/ITIL Consultant",
+      "website": "http://vidacapitalinc.com/http://magnalifesettlements.com",
+      "startDate": "2016-02-15",
+      "endDate": "2016-06-25",
+      "summary": "Vida Capital is an institutional asset manager focused exclusively on providing longevity-contingent investment solutions to institutions and individual investors.",
+      "highlights": [
+        "Unified communications across both organizations with Slack, Office365, and their local telecom provider.",
+				"Designed, converted, and launched an SEC compliant hybrid cloud solution on Azure. Built their IT and compliance strategy from scratch, providing security and control over their digital assets and formalized their employee lifecycle."
+      ]
+    },
+    {
+      "company": "Riverview Research LLC – Cleveland, OH.",
+      "position": "ITIL Consultant",
+      "website": "http://riverviewresearch.com",
+      "startDate": "2011-08-15",
+      "endDate": "2014-01-25",
+      "summary": "Riverview provides comprehensive financial guidance to affluent families and institutional clients.",
+      "highlights": [
+        "Designed and integrated Salesforce into their practice, which previously consisted of excel spreadsheets.",
+				"Organized and automated their client onboarding process for clients with a net worth over $50M.",
+				"Organized and automated the collection, processing, and reporting of quarterly performance reports distributed to clients."
+      ]
+    },
+    {
+      "company": "Custom Decal LLC – St. Louis, MO./Grand Junction, CO./Provo, UT.",
+      "position": "Founder",
+      "website": "http://mallstickers.com (accessible on http://web.archive.org)",
+      "startDate": "2008-06-01",
+      "endDate": "2012-07-01",
+      "summary": "",
+      "highlights": [
+        "Researched and developed a detailed data analysis algorithm to forecast ideal expansion locations.",
+				"Built a proprietary POS system to manage and track employees and performance on a live server, which included integrated security cams, payroll management, and theft audits.",
+				"Developed ecommerce site with WordPress and built an application in Flash and PHP for customers to design and order their graphics from the website. Linked Woocommerce with proprietary POS system to automate internet orders."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Project Read",
+      "position": "Developer",
+      "website": "http://projectreadutah.org",
+      "startDate": "2014-03-01",
+      "endDate": "2015-03-01",
+      "summary": "Project Read provides one-on-one tutoring services to adults with low literacy skills and changes lives through literacy by empowering individuals, strengthening families, and building community.",
+      "highlights": [
+        "Converted an outdated, static HTML site into a Wordpress multisite and CMS consisted of four separate sites.",
+			"Although not an ICANN registrar, Kulado Inc. provides at-cost domain registration using a proprietary api algorithm."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Western Governors University",
+      "area": "Information Systems Management",
+      "studyType": "Masters of Business Administration",
+      "startDate": "2015-08-25",
+      "endDate": "2016-01-15"
+    },
+    {
+			"institution": "Utah Valley University",
+			"area": "Business Management",
+			"studyType": "Bachelor",
+			"startDate": "2011-08-25",
+			"endDate": "2014-08-15"
+		}
+  ],
+  "skills": [
+    {
+      "name": "Innovation",
+      "level": "Master",
+      "keywords": [
+        "Weird Perspective",
+        "Think too much",
+        "Unconventional"
+      ]
+    },
+    {
+      "name": "Management",
+      "level": "Really Good",
+      "keywords": [
+        "Automation",
+        "Productivity",
+        "Scalability",
+        "Resourceful"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Ice Hockey",
+      "keywords": [
+        "St. Louis Blues",
+				"NHL 18",
+				"Dangle, Snipe, Celly"
+      ]
+    },
+    {
+      "name": "Speed",
+      "keywords": [
+        "Engines",
+				"Rockets",
+				"Formula One"
+      ]
+    },
+    {
+      "name": "The Universe",
+      "keywords": [
+        "String Theory",
+				"Relating binary to biology",
+				"Losing my mind on those last two topics"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Larry Powell - LP Institutional, LLC. - Austin, TX",
+      "reference": "Larry is a current client of Kulado Inc. I met Larry through a previous client referral and have been working with him for over three years. I have done various projects for him including a Salesforce integration and ongoing administration. Automated his Pension Fund reports, developed a secure virtual data room to share the reports while restricting the ability to share or download the reports. Larry speaks highly of me because I have provided him with excellent customer service, which includes taking his calls at 2am to wrap up projects or provide random tech support, business, or accounting advice for him. Larry continues to trust me with full, unmonitored access to everything in his business and personal life, including his business and personal credit cards and accounts, totalling in excess of half a million dollars."
+    },
+    {
+      "name": "Steve Yarmesch - Riverview Research LLC. - Cleveland, OH",
+      "reference": "Steve is the founder of Riverview Research. I’ve worked with Steve remotely for several years, and worked exclusively in his office temporarily throughout parts of 2013 and 2016. My technical and programming abilities weren’t quite to where they are now, but my approach to solving business needs, learning and researching solutions, and attempting to automate everything are some of the more significant qualities Steve can confirm about me."
+    }
+  ]
+}
